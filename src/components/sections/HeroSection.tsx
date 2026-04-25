@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import { motion } from "framer-motion";
+import { MapPin, Utensils, Truck } from "lucide-react";
 import { ButtonLink } from "@/components/ui/Button";
 
 export function HeroSection() {
@@ -12,7 +13,7 @@ export function HeroSection() {
   return (
     <section className="relative min-h-screen flex items-center justify-center bg-gradient-to-br from-red via-orange to-red overflow-hidden">
       {/* Mexican pattern background - subtle calaveras, chiles, flowers */}
-      <div className="absolute inset-0 opacity-[0.07]">
+      <div className="absolute inset-0 opacity-10">
         <svg className="w-full h-full" viewBox="0 0 400 400" preserveAspectRatio="xMidYMid slice">
           <defs>
             <pattern id="mexicanPattern" x="0" y="0" width="80" height="80" patternUnits="userSpaceOnUse">
@@ -50,31 +51,22 @@ export function HeroSection() {
         </svg>
       </div>
 
-      {/* Food decorative element - taco icon */}
-      <div className="absolute bottom-10 right-10 opacity-20 hidden lg:block">
-        <svg className="w-40 h-40" viewBox="0 0 100 100" fill="white">
-          <path d="M10 60 Q50 20 90 60 Q50 80 10 60" stroke="white" strokeWidth="2" fill="none" opacity="0.5"/>
-          <path d="M20 58 Q50 30 80 58" stroke="white" strokeWidth="1.5" fill="none" opacity="0.4"/>
-          <path d="M25 55 L30 50 L35 55" stroke="white" strokeWidth="1" fill="none" opacity="0.3"/>
-          <path d="M45 52 L50 45 L55 52" stroke="white" strokeWidth="1" fill="none" opacity="0.3"/>
-          <path d="M65 55 L70 48 L75 55" stroke="white" strokeWidth="1" fill="none" opacity="0.3"/>
-        </svg>
-      </div>
 
-      <div className="relative z-10 text-center px-4 max-w-4xl mx-auto">
+
+      <div className="relative z-10 text-center px-4 max-w-4xl mx-auto pt-16 md:pt-24">
         {/* Logo - integrated card */}
         <motion.div
           initial={{ opacity: 0, y: 30, scale: 0.9 }}
           animate={{ opacity: 1, y: 0, scale: 1 }}
           transition={{ duration: 0.6 }}
-          className="mb-8"
+          className="mb-10"
         >
-          <div className="inline-block bg-white/95 backdrop-blur-sm rounded-2xl p-4 shadow-2xl">
+          <div className="inline-block bg-white/95 backdrop-blur-sm rounded-2xl p-3 shadow-2xl">
             <Image
               src="/assets/logo.webp"
               alt="Taquería Mexicana Bésame"
-              width={180}
-              height={180}
+              width={150}
+              height={150}
               className="mx-auto rounded-xl"
               priority
             />
@@ -86,7 +78,7 @@ export function HeroSection() {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.2 }}
-          className="font-lilita text-5xl md:text-7xl text-white mb-2"
+          className="font-lilita text-5xl md:text-7xl text-white mb-3"
           style={{ textShadow: "0 4px 20px rgba(0,0,0,0.3)" }}
         >
           Taquería Mexicana Bésame
@@ -97,7 +89,8 @@ export function HeroSection() {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.3 }}
-          className="font-lato text-cream/95 text-xl md:text-2xl mb-6 font-light"
+          className="font-lato text-cream text-xl md:text-2xl mb-8 font-medium"
+          style={{ textShadow: "0 2px 8px rgba(0,0,0,0.2)" }}
         >
           Auténtica comida mexicana en el corazón de Aranjuez
         </motion.p>
@@ -107,16 +100,19 @@ export function HeroSection() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.4 }}
-          className="flex flex-wrap justify-center gap-3 mb-8"
+          className="flex flex-wrap justify-center gap-3 mb-10"
         >
-          <span className="bg-white/20 backdrop-blur-sm text-white px-4 py-2 rounded-full text-sm font-lato">
-            📍 Aranjuez
+          <span className="bg-white/16 backdrop-blur-sm text-white px-[14px] py-2 rounded-full text-sm font-lato flex items-center gap-1.5">
+            <MapPin className="w-4 h-4" />
+            Aranjuez
           </span>
-          <span className="bg-white/20 backdrop-blur-sm text-white px-4 py-2 rounded-full text-sm font-lato">
-            🍽️ Come aquí / Recoge
+          <span className="bg-white/16 backdrop-blur-sm text-white px-[14px] py-2 rounded-full text-sm font-lato flex items-center gap-1.5">
+            <Utensils className="w-4 h-4" />
+            Come aquí / Recoge
           </span>
-          <span className="bg-white/20 backdrop-blur-sm text-white px-4 py-2 rounded-full text-sm font-lato">
-            🚀 Delivery disponible
+          <span className="bg-white/16 backdrop-blur-sm text-white px-[14px] py-2 rounded-full text-sm font-lato flex items-center gap-1.5">
+            <Truck className="w-4 h-4" />
+            Delivery disponible
           </span>
         </motion.div>
 
@@ -132,7 +128,8 @@ export function HeroSection() {
             target="_blank"
             rel="noopener noreferrer"
             size="lg"
-            className="bg-white text-red hover:bg-cream shadow-xl order-1 sm:order-2"
+            className="order-1 sm:order-2 shadow-[0_8px_30px_rgba(0,0,0,0.25)]"
+            style={{ backgroundColor: "#fff4df", color: "#e7333f" }}
           >
             ¡Pedir Ahora!
           </ButtonLink>
@@ -145,6 +142,16 @@ export function HeroSection() {
             Ver Carta
           </ButtonLink>
         </motion.div>
+      </div>
+
+      {/* Decorative calavera image */}
+      <div className="absolute bottom-10 right-10 opacity-30 hidden lg:block w-40 h-40">
+        <Image
+          src="/assets/galeria/calavera-2.webp"
+          alt="Decoración mexicana"
+          fill
+          className="object-contain"
+        />
       </div>
 
       {/* Scroll indicator */}

@@ -3,7 +3,6 @@ import { CartaSection } from "@/components/sections/CartaSection";
 import { NosotrosSection } from "@/components/sections/NosotrosSection";
 import { GaleriaSection } from "@/components/sections/GaleriaSection";
 import { ContactoSection } from "@/components/sections/ContactoSection";
-import { PedirSection } from "@/components/sections/PedirSection";
 
 export default function Home() {
   return (
@@ -13,7 +12,6 @@ export default function Home() {
       <NosotrosSection />
       <GaleriaSection />
       <ContactoSection />
-      <PedirSection />
     </main>
   );
 }

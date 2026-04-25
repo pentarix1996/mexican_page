@@ -5,6 +5,9 @@ import { motion, AnimatePresence } from "framer-motion";
 import menuData from "@/data/menu.json";
 import { MenuCard } from "@/components/ui/MenuCard";
 import { SectionWrapper } from "@/components/ui/SectionWrapper";
+import { ButtonLink } from "@/components/ui/Button";
+
+type Tag = "picante" | "vegetariano" | "recomendado";
 
 export function CartaSection() {
   const [activeCategory, setActiveCategory] = useState(menuData.categories[0].id);
@@ -59,11 +62,32 @@ export function CartaSection() {
                   name={item.name}
                   description={item.description}
                   price={item.price}
+                  tags={item.tags as Tag[]}
                 />
               </motion.div>
             ))}
         </motion.div>
       </AnimatePresence>
+
+      {/* CTA at the end */}
+      <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.5 }}
+        className="text-center mt-12"
+      >
+        <p className="font-lilita text-2xl text-dark mb-4">¿Ya sabes qué pedir?</p>
+        <ButtonLink
+          href="https://besamearanjuez.com/"
+          target="_blank"
+          rel="noopener noreferrer"
+          size="lg"
+          className="bg-red text-white hover:bg-orange shadow-lg"
+        >
+          ¡Pedir Ahora!
+        </ButtonLink>
+      </motion.div>
     </SectionWrapper>
   );
 }

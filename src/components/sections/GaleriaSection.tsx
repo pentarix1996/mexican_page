@@ -5,14 +5,14 @@ import { ImageCard } from "@/components/ui/ImageCard";
 import { SectionWrapper } from "@/components/ui/SectionWrapper";
 
 const galleryItems = [
-  { id: "local-1", alt: "Interior del restaurante", title: "Nuestro Espacio" },
-  { id: "local-2", alt: "Exterior del restaurante", title: "Bésame" },
-  { id: "comida-1", alt: "Tacos deliciosos", title: "Nuestros Tacos" },
-  { id: "comida-2", alt: "Comida mexicana", title: "Sabores" },
-  { id: "comida-3", alt: "Plato típico mexicano", title: "Tradición" },
-  { id: "comida-4", alt: "Especialidad de la casa", title: "Chef's Choice" },
-  { id: "calavera-1", alt: "Calavera decorativa", title: "Día de los Muertos" },
-  { id: "calavera-2", alt: "Calavera mexicana", title: "Tradición" },
+  { id: "local-1", alt: "Interior del restaurante", title: "Nuestro Espacio", type: "real" },
+  { id: "local-2", alt: "Exterior del restaurante", title: "Bésame", type: "real" },
+  { id: "comida-1", alt: "Tacos deliciosos", title: "Nuestros Tacos", type: "real" },
+  { id: "comida-2", alt: "Comida mexicana", title: "Sabores", type: "real" },
+  { id: "comida-3", alt: "Plato típico mexicano", title: "Tradición", type: "real" },
+  { id: "comida-4", alt: "Especialidad de la casa", title: "Chef's Choice", type: "real" },
+  { id: "calavera-1", alt: "Calavera decorativa", title: "Día de los Muertos", type: "decorative" },
+  { id: "calavera-2", alt: "Calavera mexicana", title: "Tradición", type: "decorative" },
 ];
 
 // Placeholder paths - user will replace with real images
@@ -27,6 +27,10 @@ const placeholderPaths: Record<string, string> = {
   "calavera-2": "/assets/galeria/calavera-2.webp",
 };
 
+// Separate into real restaurant images and decorative elements
+const realImages = galleryItems.filter((item) => item.type === "real");
+const decorativeImages = galleryItems.filter((item) => item.type === "decorative");
+
 export function GaleriaSection() {
   return (
     <SectionWrapper id="galeria" className="bg-cream">
@@ -38,23 +42,49 @@ export function GaleriaSection() {
         </p>
       </div>
 
-      {/* Image Grid - 2 cols mobile, 4 cols desktop */}
-      <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-        {galleryItems.map((item, index) => (
-          <motion.div
-            key={item.id}
-            initial={{ opacity: 0, scale: 0.9 }}
-            whileInView={{ opacity: 1, scale: 1 }}
-            viewport={{ once: true }}
-            transition={{ delay: index * 0.1, duration: 0.3 }}
-          >
-            <ImageCard
-              src={placeholderPaths[item.id]}
-              alt={item.alt}
-              title={item.title}
-            />
-          </motion.div>
-        ))}
+      {/* Real restaurant images */}
+      <div className="mb-8">
+        <h3 className="font-lilita text-xl text-dark mb-4 text-center">Nuestro Restaurante</h3>
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+          {realImages.map((item, index) => (
+            <motion.div
+              key={item.id}
+              initial={{ opacity: 0, scale: 0.9 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              viewport={{ once: true }}
+              transition={{ delay: index * 0.1, duration: 0.3 }}
+            >
+              <ImageCard
+                src={placeholderPaths[item.id]}
+                alt={item.alt}
+                title={item.title}
+              />
+            </motion.div>
+          ))}
+        </div>
+      </div>
+
+      {/* Decorative elements - smaller, styled differently */}
+      <div>
+        <h3 className="font-lilita text-xl text-dark mb-4 text-center">Ambiente Mexicano</h3>
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+          {decorativeImages.map((item, index) => (
+            <motion.div
+              key={item.id}
+              initial={{ opacity: 0, scale: 0.9 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              viewport={{ once: true }}
+              transition={{ delay: index * 0.1, duration: 0.3 }}
+            >
+              <ImageCard
+                src={placeholderPaths[item.id]}
+                alt={item.alt}
+                title={item.title}
+                className="border-2 border-orange/20"
+              />
+            </motion.div>
+          ))}
+        </div>
       </div>
     </SectionWrapper>
   );

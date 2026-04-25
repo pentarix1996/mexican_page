@@ -4,6 +4,7 @@ export const MenuItemSchema = z.object({
   name: z.string(),
   description: z.string(),
   price: z.number().positive(),
+  tags: z.array(z.enum(["picante", "vegetariano", "recomendado"])).default([]),
 });
 
 export const CategorySchema = z.object({

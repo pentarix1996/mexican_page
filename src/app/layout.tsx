@@ -1,13 +1,14 @@
 import type { Metadata } from "next";
-import { Lilita_One, Pacifico, Lato } from "next/font/google";
+import localFont from "next/font/local";
+import { Pacifico, Lato } from "next/font/google";
 import "./globals.css";
 import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
 
-const lilita = Lilita_One({
-  weight: "400",
-  subsets: ["latin"],
+const lilitaOne = localFont({
+  src: "../../public/fonts/LilitaOne-Regular.ttf",
   variable: "--font-lilita",
+  display: "swap",
 });
 
 const pacifico = Pacifico({
@@ -34,7 +35,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="es">
-      <body className={`${lilita.variable} ${pacifico.variable} ${lato.variable} font-sans antialiased`}>
+      <body className={`${lilitaOne.variable} ${pacifico.variable} ${lato.variable} font-sans antialiased`}>
         <Navbar />
         {children}
         <Footer />

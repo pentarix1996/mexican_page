@@ -9,17 +9,28 @@ export function NosotrosSection() {
           <h2 className="font-lilita text-4xl md:text-5xl text-dark mb-6">Nosotros</h2>
           <div className="space-y-4 font-lato text-gray-700 text-lg leading-relaxed">
             <p>
-              En <span className="font-bold text-red">Taquería Mexicana Bésame</span>, cada taco 
-              cuenta una historia. Somos una familia mexicana que trajo los sabores de nuestra 
+              En <span className="font-bold text-red">Taquería Mexicana Bésame</span>, cada taco
+              cuenta una historia. Somos una familia mexicana que trajo los sabores de nuestra
               tierra a Aranjuez, creando un rincón donde la tradición y la pasión se unen.
             </p>
             <p>
-              Nuestro compromiso es ofrecerte <span className="font-bold text-orange">autenticidad</span>: 
-              desde las salsas preparadas con recetas heredadas de generaciones, hasta las 
-              tortillas hechas a mano cada mañana.
+              Nuestro compromiso es ofrecerte <span className="font-bold text-orange">autenticidad</span>:
+              desde las salsas preparadas con recetas heredadas de generaciones, hasta las
+              tortillas hechas a mano cada mañana. Tacos al momento, guacamole en tu mesa,
+              y un ambiente que tetransporta directamente a México.
             </p>
-            <p className="font-pacifico text-2xl text-green">
-              "La comida mexicana es más que comer, es sentirse en casa."
+
+            {/* Featured quote with decorative elements */}
+            <blockquote className="relative my-8 pl-6 border-l-4 border-green">
+              <div className="absolute -left-3 -top-3 text-6xl text-green/20 font-serif leading-none">"</div>
+              <p className="font-pacifico text-2xl text-green relative z-10">
+                La comida mexicana es más que comer, es sentirse en casa.
+              </p>
+            </blockquote>
+
+            <p>
+              Ven a visitarnos en <span className="font-semibold">Calle de Stuart 167</span> y
+              descubre por qué nuestros clientes vuelven una y otra vez.
             </p>
           </div>
         </div>
