@@ -8,37 +8,43 @@
           "name": "Alambre",
           "description": "Ración de Carne de Ternera con Bacon, Pimiento, Cebolla y Queso",
           "price": 12,
-          "available": true
+          "available": true,
+          "image": "alambre.jpg"
         },
         {
           "name": "Guacamole con Totopos",
           "description": "Complementos",
           "price": 10,
-          "available": true
+          "available": true,
+          "image": "guacamole-con-totopos.jpg"
         },
         {
           "name": "Gringa Pastor",
           "description": "Cerdo Adobado",
           "price": 3.5,
-          "available": true
+          "available": true,
+          "image": "gringa-pastor.jpg"
         },
         {
           "name": "Gringa Suadero",
           "description": "Ternera confitada",
           "price": 3.5,
-          "available": true
+          "available": true,
+          "image": "gringa-suadero.jpg"
         },
         {
           "name": "Nachos Chingones",
           "description": "Ración de totopos artesanos acompañados de queso fundido cheddar, guacamole, crema agria, frijoles y bacon crispy",
           "price": 10,
-          "available": true
+          "available": true,
+          "image": "nachos-chingones.jpg"
         },
         {
           "name": "Burrito de Tinga de Pollo",
           "description": "Pollo deshebrado con salsa de tomate Chile chipotle, Arroz, frijoles, queso y guacamole",
           "price": 10,
-          "available": true
+          "available": true,
+          "image": "burrito-tinga-pollo.jpg"
         }
       ]
     },
@@ -50,25 +56,29 @@
           "name": "Nachos Chingones",
           "description": "Ración de totopos artesanos acompañados de queso fundido cheddar, guacamole, crema agria, frijoles y bacon crispy",
           "price": 10,
-          "available": true
+          "available": true,
+          "image": "nachos-chingones.jpg"
         },
         {
           "name": "Alambre",
           "description": "Ración de Carne de Ternera con Bacon, Pimiento, Cebolla y Queso",
           "price": 12,
-          "available": true
+          "available": true,
+          "image": "alambre.jpg"
         },
         {
           "name": "Bowl Chili con Carne",
           "description": "Carne en salsa, chili, frijoles y arroz, acompañado fritos de maíz caseros y queso",
           "price": 10,
-          "available": true
+          "available": true,
+          "image": "bowl-chili-con-carne.jpg"
         },
         {
           "name": "Guacamole con Totopos",
           "description": "Complementos",
           "price": 10,
-          "available": true
+          "available": true,
+          "image": "guacamole-con-totopos.jpg"
         }
       ]
     },
@@ -80,13 +90,15 @@
           "name": "Tarta de chocolate",
           "description": "",
           "price": 5,
-          "available": false
+          "available": false,
+          "image": "tarta-chocolate.jpg"
         },
         {
           "name": "Pan de muerto",
           "description": "",
           "price": 5,
-          "available": false
+          "available": false,
+          "image": "pan-de-muerto.jpg"
         }
       ]
     },
@@ -98,7 +110,8 @@
           "name": "Tostada",
           "description": "Tortilla tostada con paté de frijol y tinga de pollo",
           "price": 5,
-          "available": true
+          "available": true,
+          "image": "tostada-tinga.jpg"
         }
       ]
     },
@@ -110,13 +123,15 @@
           "name": "Gordita Carne",
           "description": "",
           "price": 4.5,
-          "available": false
+          "available": false,
+          "image": "gordita.jpg"
         },
         {
           "name": "Gordita Mixta",
           "description": "Frijol con carne",
           "price": 4.5,
-          "available": true
+          "available": true,
+          "image": "gordita.jpg"
         }
       ]
     },
@@ -128,7 +143,8 @@
           "name": "Tacos Dorados de Pollo",
           "description": "3UD",
           "price": 9,
-          "available": true
+          "available": true,
+          "image": "tacos-dorados-pollo.jpg"
         }
       ]
     },
@@ -140,25 +156,29 @@
           "name": "Quesadilla Huitlacoche",
           "description": "Hongo del Maíz con Queso",
           "price": 2.7,
-          "available": true
+          "available": true,
+          "image": "quesadilla.jpg"
         },
         {
           "name": "EXTRA CREMA AGRIA",
           "description": "",
           "price": 2.5,
-          "available": true
+          "available": true,
+          "image": "extra-crema-agria.jpg"
         },
         {
           "name": "Quesadilla de queso",
           "description": "Hongo del Maíz con Queso",
           "price": 2.7,
-          "available": true
+          "available": true,
+          "image": "quesadilla.jpg"
         },
         {
           "name": "Quesadilla Flor de Calabaza",
           "description": "Flor de la Calabaza con Queso",
           "price": 2.7,
-          "available": true
+          "available": true,
+          "image": "quesadilla.jpg"
         }
       ]
     },
@@ -171,79 +191,92 @@
           "name": "Taco Pastor",
           "description": "",
           "price": 3,
-          "available": true
+          "available": true,
+          "image": "tacos-al-pastor.jpg"
         },
         {
           "name": "EXTRA GUACAMOLE",
           "description": "",
           "price": 2.5,
-          "available": true
+          "available": true,
+          "image": "extra-guacamole.jpg"
         },
         {
           "name": "EXTRA CREMA AGRIA",
           "description": "",
           "price": 2.5,
-          "available": true
+          "available": true,
+          "image": "extra-crema-agria.jpg"
         },
         {
           "name": "Taco Suadero",
           "description": "Ternera confitada",
           "price": 3,
-          "available": true
+          "available": true,
+          "image": "taco-suadero.jpg"
         },
         {
           "name": "Taco Cochinita",
           "description": "Cerdo deshebrado",
           "price": 3,
-          "available": true
+          "available": true,
+          "image": "taco-cochinita.jpg"
         },
         {
           "name": "Taco Carnaza",
           "description": "Ternera Cocida",
           "price": 3,
-          "available": true
+          "available": true,
+          "image": "taco-carnaza.jpg"
         },
         {
           "name": "Taco Tinga de Pollo",
           "description": "Pollo deshebrado",
           "price": 3,
-          "available": true
+          "available": true,
+          "image": "taco-tinga-pollo.jpg"
         },
         {
           "name": "Taco Chilorio Vegano",
           "description": "Taco de Soja Texturizada",
           "price": 3.1,
-          "available": true
+          "available": true,
+          "image": "taco-chilorio-vegano.jpg"
         },
         {
           "name": "Taco Jamaica",
           "description": "Vegano",
           "price": 3.1,
-          "available": true
+          "available": true,
+          "image": "taco-jamaica.jpg"
         },
         {
           "name": "Taco Tinga de Zanahoria",
           "description": "Vegano",
           "price": 3.1,
-          "available": true
+          "available": true,
+          "image": "taco-tinga-zanahoria.jpg"
         },
         {
           "name": "Taco Setas al Pastor",
           "description": "Vegano",
           "price": 3.1,
-          "available": true
+          "available": true,
+          "image": "taco-vegano-setas.jpg"
         },
         {
           "name": "Taco Champiñones con Pimiento y Cebolla",
           "description": "Vegano",
           "price": 3.1,
-          "available": true
+          "available": true,
+          "image": "taco-champinones-pimiento-cebolla.jpg"
         },
         {
           "name": "Combo 5 Tacos",
           "description": "",
           "price": 15,
-          "available": true
+          "available": true,
+          "image": "combo-5-tacos.jpg"
         }
       ]
     },
@@ -255,49 +288,57 @@
           "name": "Gringa Pastor",
           "description": "Cerdo Adobado",
           "price": 3.5,
-          "available": true
+          "available": true,
+          "image": "gringa-pastor.jpg"
         },
         {
           "name": "EXTRA GUACAMOLE",
           "description": "",
           "price": 2.5,
-          "available": true
+          "available": true,
+          "image": "extra-guacamole.jpg"
         },
         {
           "name": "Gringa Suadero",
           "description": "Ternera confitada",
           "price": 3.5,
-          "available": true
+          "available": true,
+          "image": "gringa-suadero.jpg"
         },
         {
           "name": "Gringa Chilorio",
           "description": "Cerdo deshebrado",
           "price": 3.5,
-          "available": true
+          "available": true,
+          "image": "gringa-chilorio.jpg"
         },
         {
           "name": "Gringa Setas al Pastor",
           "description": "Vegano",
           "price": 3.5,
-          "available": true
+          "available": true,
+          "image": "gringa-setas-al-pastor.jpg"
         },
         {
           "name": "Gringa Zanahoria",
           "description": "Vegano",
           "price": 3.5,
-          "available": true
+          "available": true,
+          "image": "gringa-zanahoria.jpg"
         },
         {
           "name": "Gringa Chilorio Vegetariano",
           "description": "Vegano",
           "price": 3.5,
-          "available": true
+          "available": true,
+          "image": "gringa-chilorio-vegetariano.jpg"
         },
         {
           "name": "Gringa Champiñón con Pimiento y Cebolla",
           "description": "Vegano",
           "price": 3.5,
-          "available": true
+          "available": true,
+          "image": "gringa-champinones-pimiento-cebolla.jpg"
         }
       ]
     },
@@ -309,79 +350,92 @@
           "name": "Menú 1",
           "description": "4 tacos a elegir + totopos + refresco a elegir",
           "price": 15,
-          "available": true
+          "available": true,
+          "image": "tacos-al-pastor.jpg"
         },
         {
           "name": "Menú 2",
           "description": "4 tacos a elegir + totopos + cerveza mexicana a elegir",
           "price": 16,
-          "available": true
+          "available": true,
+          "image": "tacos-al-pastor.jpg"
         },
         {
           "name": "Menú 3",
           "description": "Nuestro combo de 5 tacos + totopos",
           "price": 16,
-          "available": true
+          "available": true,
+          "image": "tacos-al-pastor.jpg"
         },
         {
           "name": "Menú 4",
           "description": "3 gringas a elegir + totopos",
           "price": 13,
-          "available": true
+          "available": true,
+          "image": "tacos-al-pastor.jpg"
         },
         {
           "name": "Menú 5",
           "description": "3 gringas a elegir + totopos + refresco a elegir",
           "price": 14,
-          "available": true
+          "available": true,
+          "image": "tacos-al-pastor.jpg"
         },
         {
           "name": "Menú 6",
           "description": "3 gringas a elegir + totopos + cerveza mexicana a elegir",
           "price": 15,
-          "available": true
+          "available": true,
+          "image": "tacos-al-pastor.jpg"
         },
         {
           "name": "Menú 7",
           "description": "2 gorditas a elegir + refresco a elegir",
           "price": 12,
-          "available": true
+          "available": true,
+          "image": "tacos-al-pastor.jpg"
         },
         {
           "name": "Menú 8",
           "description": "2 gorditas a elegir + cerveza mexicana a elegir",
           "price": 13,
-          "available": true
+          "available": true,
+          "image": "tacos-al-pastor.jpg"
         },
         {
           "name": "Menú 9",
           "description": "4 gorditas a elegir + 4 refrescos a elegir",
           "price": 26,
-          "available": true
+          "available": true,
+          "image": "tacos-al-pastor.jpg"
         },
         {
           "name": "Menú 10",
           "description": "2 quesadillas a elegir + totopos + refresco a elegir",
           "price": 9,
-          "available": true
+          "available": true,
+          "image": "tacos-al-pastor.jpg"
         },
         {
           "name": "Menú 11",
           "description": "2 quesadillas a elegir + totopos + cerveza mexicana a elegir",
           "price": 10,
-          "available": true
+          "available": true,
+          "image": "tacos-al-pastor.jpg"
         },
         {
           "name": "Menú 12",
           "description": "1 alambre + totopos + 2 refrescos a elegir",
           "price": 17,
-          "available": true
+          "available": true,
+          "image": "tacos-al-pastor.jpg"
         },
         {
           "name": "Menú 13",
           "description": "1 alambre + totopos + 2 cervezas mexicanas a elegir",
           "price": 19,
-          "available": true
+          "available": true,
+          "image": "tacos-al-pastor.jpg"
         }
       ]
     },
@@ -393,31 +447,36 @@
           "name": "Burrito de Tinga de Pollo",
           "description": "Pollo deshebrado con salsa de tomate Chile chipotle, Arroz, frijoles, queso y guacamole",
           "price": 10,
-          "available": true
+          "available": true,
+          "image": "burrito-tinga-pollo.jpg"
         },
         {
           "name": "Burrito Chilorio Vegano",
           "description": "",
           "price": 11,
-          "available": true
+          "available": true,
+          "image": "burrito-chilorio-vegano.jpg"
         },
         {
           "name": "Burrito Res",
           "description": "Fajitas de ternera, acompañado de pimiento y cebolla, arroz, frijoles, queso y guacamole",
           "price": 10,
-          "available": true
+          "available": true,
+          "image": "burrito-res.jpg"
         },
         {
           "name": "Burrito Tijuana",
           "description": "Deliciosa carne de cerdo adobada con Chile guajillo acompañado de arroz, frijoles, queso y guacamole",
           "price": 10,
-          "available": true
+          "available": true,
+          "image": "burrito-tijuana.jpg"
         },
         {
           "name": "Burrito de Chili con Carne",
           "description": "Carne en salsa con chili, frijoles, arroz, queso y guacamole",
           "price": 10,
-          "available": true
+          "available": true,
+          "image": "burrito-chili-con-carne.jpg"
         }
       ]
     },
@@ -429,61 +488,71 @@
           "name": "Tercio 0.0 Tostada",
           "description": "",
           "price": 2.8,
-          "available": true
+          "available": true,
+          "image": "cervezas-mexicanas.jpg"
         },
         {
           "name": "Tercio Radler",
           "description": "",
           "price": 2.8,
-          "available": true
+          "available": true,
+          "image": "cervezas-mexicanas.jpg"
         },
         {
           "name": "Aquarius Limón",
           "description": "",
           "price": 2.5,
-          "available": true
+          "available": true,
+          "image": "bebidas-refrescos.jpg"
         },
         {
           "name": "Tercio Mahou 5 Estrellas",
           "description": "",
           "price": 2.8,
-          "available": true
+          "available": true,
+          "image": "cervezas-mexicanas.jpg"
         },
         {
           "name": "Fanta Limón",
           "description": "",
           "price": 2.5,
-          "available": true
+          "available": true,
+          "image": "bebidas-refrescos.jpg"
         },
         {
           "name": "Nestea",
           "description": "",
           "price": 2.5,
-          "available": true
+          "available": true,
+          "image": "bebidas-refrescos.jpg"
         },
         {
           "name": "Agua Solán de Cabras 50cl",
           "description": "",
           "price": 2,
-          "available": true
+          "available": true,
+          "image": "bebidas-refrescos.jpg"
         },
         {
           "name": "Coca Cola",
           "description": "",
           "price": 2.5,
-          "available": true
+          "available": true,
+          "image": "bebidas-refrescos.jpg"
         },
         {
           "name": "Coca Cola Zero",
           "description": "",
           "price": 2.5,
-          "available": true
+          "available": true,
+          "image": "bebidas-refrescos.jpg"
         },
         {
           "name": "Fanta Naranja",
           "description": "",
           "price": 2.5,
-          "available": true
+          "available": true,
+          "image": "bebidas-refrescos.jpg"
         }
       ]
     },
@@ -495,37 +564,43 @@
           "name": "Cerveza Sol",
           "description": "",
           "price": 3.5,
-          "available": true
+          "available": true,
+          "image": "cervezas-mexicanas.jpg"
         },
         {
           "name": "Cerveza Corona",
           "description": "",
           "price": 3.5,
-          "available": true
+          "available": true,
+          "image": "cervezas-mexicanas.jpg"
         },
         {
           "name": "Cerveza Negra Modelo",
           "description": "",
           "price": 3.5,
-          "available": false
+          "available": false,
+          "image": "cervezas-mexicanas.jpg"
         },
         {
           "name": "Cerveza Mexicana Modelo Especial",
           "description": "",
           "price": 3.5,
-          "available": true
+          "available": true,
+          "image": "cervezas-mexicanas.jpg"
         },
         {
           "name": "Cerveza Pacífico Clara",
           "description": "",
           "price": 3.5,
-          "available": false
+          "available": false,
+          "image": "cervezas-mexicanas.jpg"
         },
         {
           "name": "Cerveza Corona Cero",
           "description": "",
           "price": 3.5,
-          "available": true
+          "available": true,
+          "image": "cervezas-mexicanas.jpg"
         }
       ]
     }
