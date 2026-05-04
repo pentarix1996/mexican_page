@@ -1,50 +1,71 @@
+import Image from "next/image";
+import { MapPin, Sparkles } from "lucide-react";
+import { restaurantAddress, restaurantMapsUrl } from "@/data/location";
+import { SectionHeading } from "@/components/ui/SectionHeading";
 import { SectionWrapper } from "@/components/ui/SectionWrapper";
 
 export function NosotrosSection() {
   return (
-    <SectionWrapper id="nosotros" className="bg-white">
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-        {/* Text Content */}
+    <SectionWrapper id="nosotros" className="border-b border-red/30 bg-white">
+      <SectionHeading
+        title="Nosotros"
+        subtitle="Un pedacito de México en Aranjuez"
+        className="mb-12"
+      />
+
+      <div className="grid grid-cols-1 items-center gap-12 lg:grid-cols-[0.9fr_1.1fr]">
         <div>
-          <h2 className="font-lilita text-4xl md:text-5xl text-dark mb-6">Nosotros</h2>
-          <div className="space-y-4 font-lato text-gray-700 text-lg leading-relaxed">
+          <div className="space-y-5 font-lato text-lg leading-relaxed text-gray-700">
             <p>
               En <span className="font-bold text-red">Taquería Mexicana Bésame</span>, cada taco
               cuenta una historia. Somos una familia mexicana que trajo los sabores de nuestra
-              tierra a Aranjuez, creando un rincón donde la tradición y la pasión se unen.
+              tierra a Aranjuez, creando un rincón donde tradición, color y barrio se encuentran.
             </p>
             <p>
-              Nuestro compromiso es ofrecerte <span className="font-bold text-orange">autenticidad</span>:
-              desde las salsas preparadas con recetas heredadas de generaciones, hasta las
-              tortillas hechas a mano cada mañana. Tacos al momento, guacamole en tu mesa,
-              y un ambiente que tetransporta directamente a México.
-            </p>
-
-            {/* Featured quote with decorative elements */}
-            <blockquote className="relative my-8 pl-6 border-l-4 border-green">
-              <div className="absolute -left-3 -top-3 text-6xl text-green/20 font-serif leading-none">"</div>
-              <p className="font-pacifico text-2xl text-green relative z-10">
-                La comida mexicana es más que comer, es sentirse en casa.
-              </p>
-            </blockquote>
-
-            <p>
-              Ven a visitarnos en <span className="font-semibold">Calle de Stuart 167</span> y
-              descubre por qué nuestros clientes vuelven una y otra vez.
+              Nuestro compromiso es ofrecerte{" "}
+              <span className="font-bold text-orange">autenticidad</span>: salsas con carácter,
+              tortillas, guacamole en la mesa y un ambiente que te transporta directamente a
+              México.
             </p>
           </div>
+
+          <blockquote className="relative mt-9 rounded-[1.5rem] border-l-8 border-teal bg-[#fff3d7] p-6 shadow-[0_14px_35px_rgba(112,62,0,0.08)]">
+            <Sparkles className="absolute -left-4 -top-4 h-9 w-9 rounded-full bg-teal p-2 text-white" />
+            <p className="font-pacifico text-2xl leading-relaxed text-green">
+              La comida mexicana es más que comer, es sentirse en casa.
+            </p>
+          </blockquote>
+
+          <a
+            href={restaurantMapsUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="mt-8 inline-flex items-center gap-3 rounded-2xl bg-dark px-5 py-4 font-lato font-bold text-white shadow-xl transition-colors hover:bg-red"
+          >
+            <MapPin className="h-5 w-5 text-yellow" />
+            {restaurantAddress}
+          </a>
         </div>
 
-        {/* Google Maps Embed */}
-        <div className="relative h-80 lg:h-96 rounded-2xl overflow-hidden shadow-lg">
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d190.94181188791427!2d-3.604038649108135!3d40.029239083963795!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd42058ae8cdea97%3A0xa689ddaa30908795!2sRestaurante%20Taquer%C3%ADa%20Mexicana%20B%C3%A9same!5e0!3m2!1ses!2ses!4v1777125841250!5m2!1ses!2ses"
-            className="w-full h-full grayscale hover:grayscale-0 transition-all duration-500"
-            style={{ border: 0 }}
-            allowFullScreen
-            loading="lazy"
-            referrerPolicy="no-referrer-when-downgrade"
-            title="Ubicación de Taquería Mexicana Bésame"
+        <div className="relative">
+          <div className="absolute -inset-5 rotate-2 rounded-[2rem] bg-gradient-to-br from-red/18 via-orange/18 to-teal/18" />
+          <div className="relative overflow-hidden rounded-[2rem] border-[10px] border-[#fff3d7] bg-white shadow-[0_28px_80px_rgba(26,26,26,0.16)]">
+            <div className="relative aspect-[4/3]">
+              <Image
+                src="/assets/galeria/local-1.jpg"
+                alt="Interior real de Taquería Mexicana Bésame"
+                fill
+                className="object-cover"
+                sizes="(min-width: 1024px) 650px, 100vw"
+              />
+            </div>
+          </div>
+          <Image
+            src="/assets/decor/flower-cluster.png"
+            alt=""
+            width={360}
+            height={180}
+            className="pointer-events-none absolute -bottom-14 -right-7 w-64 drop-shadow-2xl"
           />
         </div>
       </div>

@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
-import { Pacifico, Lato } from "next/font/google";
+import { Lato, Pacifico } from "next/font/google";
 import "./globals.css";
 import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
@@ -25,7 +25,8 @@ const lato = Lato({
 
 export const metadata: Metadata = {
   title: "Taquería Mexicana Bésame | Aranjuez",
-  description: "Auténtica comida mexicana en el corazón de Aranjuez. Tacos, burritos, quesadillas y más.",
+  description:
+    "Auténtica comida mexicana en el corazón de Aranjuez. Tacos, burritos, quesadillas y más.",
 };
 
 export default function RootLayout({
@@ -35,7 +36,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="es">
-      <body className={`${lilitaOne.variable} ${pacifico.variable} ${lato.variable} font-sans antialiased`}>
+      <body
+        className={`${lilitaOne.variable} ${pacifico.variable} ${lato.variable} bg-cream font-sans antialiased`}
+      >
         <Navbar />
         {children}
         <Footer />

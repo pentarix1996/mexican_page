@@ -1,5 +1,6 @@
 import { formatPrice } from "@/lib/utils";
 import { Flame, Leaf, Star } from "lucide-react";
+import Image from "next/image";
 
 type Tag = "picante" | "vegetariano" | "recomendado";
 
@@ -7,7 +8,9 @@ interface MenuCardProps {
   name: string;
   description: string;
   price: number;
+  image?: string;
   tags?: Tag[];
+  badge?: string;
 }
 
 const tagConfig: Record<Tag, { icon: React.ReactNode; label: string; className: string }> = {
@@ -28,13 +31,39 @@ const tagConfig: Record<Tag, { icon: React.ReactNode; label: string; className: 
   },
 };
 
-export function MenuCard({ name, description, price, tags = [] }: MenuCardProps) {
+export function MenuCard({ name, description, price, image, tags = [], badge }: MenuCardProps) {
   return (
-    <div className="bg-white rounded-xl shadow-sm hover:shadow-md transition-shadow duration-200 border-t-2 border-orange">
-      <div className="flex justify-between items-start gap-4 p-4">
-        <div className="flex-1">
-          <h4 className="font-lato font-bold text-dark text-lg">{name}</h4>
-          <p className="font-lato text-gray-600 text-sm mt-1">{description}</p>
+    <article className="group relative overflow-hidden rounded-xl border border-[#f2d5a7] bg-white shadow-[0_10px_28px_rgba(91,42,0,0.12)] transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_18px_45px_rgba(91,42,0,0.18)]">
+      <div className="relative aspect-[1.55] overflow-hidden bg-[#f6d7a8]">
+        {image ? (
+          <Image
+            src={`/assets/menu/${image}`}
+            alt={name}
+            fill
+            className="object-cover transition-transform duration-500 group-hover:scale-105"
+            sizes="(min-width: 1024px) 25vw, (min-width: 640px) 50vw, 100vw"
+          />
+        ) : (
+          <div className="h-full w-full bg-[radial-gradient(circle_at_30%_20%,#fcbf49,transparent_30%),linear-gradient(135deg,#e63946,#f77f00)]" />
+        )}
+        {badge ? (
+          <span className="absolute left-2 top-2 rounded-md bg-red px-2.5 py-1 font-lato text-xs font-black uppercase text-white shadow-md">
+            {badge}
+          </span>
+        ) : null}
+      </div>
+
+      <div className="p-5">
+        <div className="flex items-start justify-between gap-3">
+          <h4 className="font-lato text-[16px] font-black leading-tight text-dark">{name}</h4>
+          <span className="shrink-0 font-lato text-[16px] font-black leading-none text-red">
+            {formatPrice(price)}
+          </span>
+        </div>
+        <div>
+          <p className="mt-2 min-h-[44px] font-lato text-[13px] leading-relaxed text-[#5a3921]">
+            {description || "Especialidad de la casa preparada al momento."}
+          </p>
           {tags.length > 0 && (
             <div className="flex flex-wrap gap-1.5 mt-2">
               {tags.map((tag) => {
@@ -52,12 +81,7 @@ export function MenuCard({ name, description, price, tags = [] }: MenuCardProps)
             </div>
           )}
         </div>
-        <div className="flex-shrink-0">
-          <span className="font-lato font-bold text-orange text-xl">
-            {formatPrice(price)}
-          </span>
-        </div>
       </div>
-    </div>
+    </article>
   );
 }

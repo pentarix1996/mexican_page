@@ -1,93 +1,87 @@
 "use client";
 
+import Image from "next/image";
 import { useState } from "react";
-import { motion, AnimatePresence } from "framer-motion";
 import menuData from "@/data/menu.json";
-import { MenuCard } from "@/components/ui/MenuCard";
-import { SectionWrapper } from "@/components/ui/SectionWrapper";
 import { ButtonLink } from "@/components/ui/Button";
+import { MenuCard } from "@/components/ui/MenuCard";
+import { SectionHeading } from "@/components/ui/SectionHeading";
 
 type Tag = "picante" | "vegetariano" | "recomendado";
 
 export function CartaSection() {
   const [activeCategory, setActiveCategory] = useState(menuData.categories[0].id);
+  const activeItems =
+    menuData.categories.find((category) => category.id === activeCategory)?.items ?? [];
 
   return (
-    <SectionWrapper id="carta" className="bg-cream">
-      {/* Section Header */}
-      <div className="text-center mb-12">
-        <h2 className="font-lilita text-4xl md:text-5xl text-dark mb-4">Nuestra Carta</h2>
-        <p className="font-lato text-gray-600 text-lg">
-          Sabores auténticos de México en cada bocado
-        </p>
-      </div>
+    <section
+      id="carta"
+      className="relative overflow-hidden border-b border-red/30 bg-[#fff8df] py-12 md:py-16"
+      style={{ scrollMarginTop: "92px" }}
+    >
+      <Image
+        src="/assets/decor/floral-corner-cropped.png"
+        alt=""
+        width={1194}
+        height={1080}
+        className="pointer-events-none absolute -left-3 top-0 hidden w-40 opacity-90 md:block lg:w-52"
+      />
+      <Image
+        src="/assets/decor/floral-corner-right.png"
+        alt=""
+        width={1194}
+        height={1080}
+        className="pointer-events-none absolute -right-3 top-0 hidden w-40 opacity-90 md:block lg:w-52"
+      />
 
-      {/* Category Tabs */}
-      <div className="flex flex-wrap justify-center gap-2 mb-8">
-        {menuData.categories.map((category) => (
-          <button
-            key={category.id}
-            onClick={() => setActiveCategory(category.id)}
-            className={`px-4 py-2 rounded-full font-lato font-medium transition-all duration-200 ${
-              activeCategory === category.id
-                ? "bg-red text-white"
-                : "bg-white text-dark hover:bg-red/10"
-            }`}
+      <div className="relative z-10 mx-auto max-w-[1360px] px-5 sm:px-6 lg:px-10">
+        <SectionHeading
+          title="Nuestra Carta"
+          subtitle="Sabores auténticos de México en cada bocado"
+        />
+
+        <div className="mt-8 flex flex-wrap justify-center gap-3">
+          {menuData.categories.map((category) => (
+            <button
+              key={category.id}
+              onClick={() => setActiveCategory(category.id)}
+              className={`rounded-full border px-5 py-2 font-lato text-[13px] font-black transition-all ${
+                activeCategory === category.id
+                  ? "border-red bg-red text-white shadow-[0_8px_20px_rgba(230,57,70,0.22)]"
+                  : "border-orange/55 bg-white text-dark hover:border-red hover:text-red"
+              }`}
+            >
+              {category.name}
+            </button>
+          ))}
+        </div>
+
+        <div className="mt-8 grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3 min-[1500px]:grid-cols-4">
+          {activeItems.map((item, index) => (
+            <MenuCard
+              key={`${activeCategory}-${item.name}-${index}`}
+              name={item.name}
+              description={item.description}
+              price={item.price}
+              image={(item as { image?: string }).image}
+              tags={(item as { tags?: Tag[] }).tags}
+              badge={activeCategory === "top_ventas" && index === 0 ? "★ Top" : undefined}
+            />
+          ))}
+        </div>
+
+        <div className="mt-9 text-center">
+          <ButtonLink
+            href="https://besamearanjuez.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="bg-red px-7 py-3 text-white shadow-[0_10px_24px_rgba(230,57,70,0.24)] hover:bg-orange"
           >
-            {category.name}
-          </button>
-        ))}
+            Ver carta completa
+          </ButtonLink>
+        </div>
       </div>
-
-      {/* Menu Items */}
-      <AnimatePresence mode="wait">
-        <motion.div
-          key={activeCategory}
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          exit={{ opacity: 0, y: -20 }}
-          transition={{ duration: 0.3 }}
-          className="grid grid-cols-1 md:grid-cols-2 gap-4"
-        >
-          {menuData.categories
-            .find((c) => c.id === activeCategory)
-            ?.items.map((item, index) => (
-              <motion.div
-                key={item.name}
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ delay: index * 0.05 }}
-              >
-                <MenuCard
-                  name={item.name}
-                  description={item.description}
-                  price={item.price}
-                  tags={item.tags as Tag[]}
-                />
-              </motion.div>
-            ))}
-        </motion.div>
-      </AnimatePresence>
-
-      {/* CTA at the end */}
-      <motion.div
-        initial={{ opacity: 0, y: 20 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true }}
-        transition={{ duration: 0.5 }}
-        className="text-center mt-12"
-      >
-        <p className="font-lilita text-2xl text-dark mb-4">¿Ya sabes qué pedir?</p>
-        <ButtonLink
-          href="https://besamearanjuez.com/"
-          target="_blank"
-          rel="noopener noreferrer"
-          size="lg"
-          className="bg-red text-white hover:bg-orange shadow-lg"
-        >
-          ¡Pedir Ahora!
-        </ButtonLink>
-      </motion.div>
-    </SectionWrapper>
+    </section>
   );
 }
