@@ -34,7 +34,7 @@ export function GaleriaSection() {
           className="mb-9"
         />
 
-        <div className="grid auto-rows-[210px] grid-cols-1 gap-3 sm:grid-cols-2 lg:auto-rows-[245px] lg:grid-cols-[1.16fr_1fr_1fr_1fr]">
+        <div className="columns-1 gap-4 sm:columns-2 lg:columns-4">
           {galleryImages.map((item, index) => (
             <motion.article
               key={item.src}
@@ -42,13 +42,14 @@ export function GaleriaSection() {
               whileInView={{ opacity: 1, scale: 1 }}
               viewport={{ once: true }}
               transition={{ delay: index * 0.04, duration: 0.28 }}
-              className={`group relative overflow-hidden rounded-2xl bg-white shadow-[0_12px_34px_rgba(91,42,0,0.14)] ring-[6px] ring-white/80 ${item.className}`}
+              className="group mb-4 break-inside-avoid overflow-hidden rounded-2xl bg-white shadow-[0_12px_34px_rgba(91,42,0,0.14)] ring-[6px] ring-white/80"
             >
               <Image
                 src={item.src}
                 alt={item.alt}
-                fill
-                className="object-cover transition-transform duration-500 group-hover:scale-105"
+                width={item.width}
+                height={item.height}
+                className="h-auto w-full transition-transform duration-500 group-hover:scale-105"
                 sizes="(min-width: 1024px) 25vw, (min-width: 640px) 50vw, 100vw"
               />
             </motion.article>

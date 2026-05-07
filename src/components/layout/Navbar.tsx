@@ -1,20 +1,21 @@
 "use client";
 
 import Image from "next/image";
+import Link from "next/link";
 import { Bell } from "lucide-react";
 
 const navLinks = [
-  { href: "#carta", label: "Carta" },
-  { href: "#nosotros", label: "Nosotros" },
-  { href: "#galeria", label: "Galería" },
-  { href: "#contacto", label: "Contacto" },
+  { href: "/#carta", label: "Carta" },
+  { href: "/#nosotros", label: "Nosotros" },
+  { href: "/#galeria", label: "Galería" },
+  { href: "/#contacto", label: "Contacto" },
 ];
 
 export function Navbar() {
   return (
     <nav className="fixed left-0 right-0 top-0 z-50 h-[72px] border-b border-[#ecd8af] bg-[#fff8df]/96 shadow-[0_4px_18px_rgba(58,32,0,0.08)] backdrop-blur md:h-[86px]">
       <div className="mx-auto grid h-full max-w-[1320px] grid-cols-[110px_1fr_auto] items-center px-4 sm:px-6 lg:grid-cols-[180px_1fr_180px] lg:px-10">
-        <a href="#" className="inline-flex h-full items-center">
+        <Link href="/" className="inline-flex h-full items-center">
           <Image
             src="/assets/logo.webp"
             alt="Taquería Mexicana Bésame"
@@ -23,17 +24,17 @@ export function Navbar() {
             priority
             className="h-auto max-h-[58px] w-[84px] object-contain md:max-h-[66px] md:w-[100px]"
           />
-        </a>
+        </Link>
 
         <div className="hidden items-center justify-center gap-8 md:flex lg:gap-12">
           {navLinks.map((link) => (
-            <a
+            <Link
               key={link.href}
               href={link.href}
               className="font-lato text-[15px] font-black text-black transition-colors hover:text-red"
             >
               {link.label}
-            </a>
+            </Link>
           ))}
         </div>
 

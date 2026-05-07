@@ -33,6 +33,7 @@ export function NosotrosSection() {
             <Sparkles className="absolute -left-4 -top-4 h-9 w-9 rounded-full bg-teal p-2 text-white" />
             <p className="font-pacifico text-2xl leading-relaxed text-green">
               La comida mexicana es más que comer, es sentirse en casa.
+              Por ello somos el consulado gastronómico de México en Aranjuez.
             </p>
           </blockquote>
 
@@ -52,7 +53,7 @@ export function NosotrosSection() {
           <div className="relative overflow-hidden rounded-[2rem] border-[10px] border-[#fff3d7] bg-white shadow-[0_28px_80px_rgba(26,26,26,0.16)]">
             <div className="relative aspect-[4/3]">
               <Image
-                src="/assets/galeria/local-1.jpg"
+                src="/assets/galeria/galeria01.webp"
                 alt="Interior real de Taquería Mexicana Bésame"
                 fill
                 className="object-cover"
