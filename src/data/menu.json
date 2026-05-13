@@ -23,14 +23,14 @@
           "description": "Cerdo Adobado",
           "price": 3.5,
           "available": true,
-          "image": "gringa-pastor.jpg"
+          "image": "gringas.jpg"
         },
         {
           "name": "Gringa Suadero",
           "description": "Ternera confitada",
           "price": 3.5,
           "available": true,
-          "image": "gringa-suadero.jpg"
+          "image": "gringas.jpg"
         },
         {
           "name": "Nachos Chingones",
@@ -124,14 +124,14 @@
           "description": "",
           "price": 4.5,
           "available": false,
-          "image": "gordita.jpg"
+          "image": "gordita-carne.jpg"
         },
         {
           "name": "Gordita Mixta",
           "description": "Frijol con carne",
           "price": 4.5,
           "available": true,
-          "image": "gordita.jpg"
+          "image": "gordita-mixta.jpg"
         }
       ]
     },
@@ -144,7 +144,7 @@
           "description": "3UD",
           "price": 9,
           "available": true,
-          "image": "tacos-dorados-pollo.jpg"
+          "image": "tacos-dorados.jpg"
         }
       ]
     },
@@ -157,7 +157,7 @@
           "description": "Hongo del Maíz con Queso",
           "price": 2.7,
           "available": true,
-          "image": "quesadilla.jpg"
+          "image": "quesadilla-huitlacoche.jpg"
         },
         {
           "name": "EXTRA CREMA AGRIA",
@@ -171,14 +171,14 @@
           "description": "Hongo del Maíz con Queso",
           "price": 2.7,
           "available": true,
-          "image": "quesadilla.jpg"
+          "image": "quesadilla-queso.jpg"
         },
         {
           "name": "Quesadilla Flor de Calabaza",
           "description": "Flor de la Calabaza con Queso",
           "price": 2.7,
           "available": true,
-          "image": "quesadilla.jpg"
+          "image": "quesadilla-flor-calabaza.jpg"
         }
       ]
     },
@@ -276,7 +276,7 @@
           "description": "",
           "price": 15,
           "available": true,
-          "image": "combo-5-tacos.jpg"
+          "image": "menu.jpg"
         }
       ]
     },
@@ -289,7 +289,7 @@
           "description": "Cerdo Adobado",
           "price": 3.5,
           "available": true,
-          "image": "gringa-pastor.jpg"
+          "image": "gringas.jpg"
         },
         {
           "name": "EXTRA GUACAMOLE",
@@ -303,42 +303,42 @@
           "description": "Ternera confitada",
           "price": 3.5,
           "available": true,
-          "image": "gringa-suadero.jpg"
+          "image": "gringas.jpg"
         },
         {
           "name": "Gringa Chilorio",
           "description": "Cerdo deshebrado",
           "price": 3.5,
           "available": true,
-          "image": "gringa-chilorio.jpg"
+          "image": "gringas.jpg"
         },
         {
           "name": "Gringa Setas al Pastor",
           "description": "Vegano",
           "price": 3.5,
           "available": true,
-          "image": "gringa-setas-al-pastor.jpg"
+          "image": "gringas.jpg"
         },
         {
           "name": "Gringa Zanahoria",
           "description": "Vegano",
           "price": 3.5,
           "available": true,
-          "image": "gringa-zanahoria.jpg"
+          "image": "gringas.jpg"
         },
         {
           "name": "Gringa Chilorio Vegetariano",
           "description": "Vegano",
           "price": 3.5,
           "available": true,
-          "image": "gringa-chilorio-vegetariano.jpg"
+          "image": "gringas.jpg"
         },
         {
           "name": "Gringa Champiñón con Pimiento y Cebolla",
           "description": "Vegano",
           "price": 3.5,
           "available": true,
-          "image": "gringa-champinones-pimiento-cebolla.jpg"
+          "image": "gringas.jpg"
         }
       ]
     },
@@ -351,91 +351,91 @@
           "description": "4 tacos a elegir + totopos + refresco a elegir",
           "price": 15,
           "available": true,
-          "image": "tacos-al-pastor.jpg"
+          "image": "menu.jpg"
         },
         {
           "name": "Menú 2",
           "description": "4 tacos a elegir + totopos + cerveza mexicana a elegir",
           "price": 16,
           "available": true,
-          "image": "tacos-al-pastor.jpg"
+          "image": "menu.jpg"
         },
         {
           "name": "Menú 3",
           "description": "Nuestro combo de 5 tacos + totopos",
           "price": 16,
           "available": true,
-          "image": "tacos-al-pastor.jpg"
+          "image": "menu.jpg"
         },
         {
           "name": "Menú 4",
           "description": "3 gringas a elegir + totopos",
           "price": 13,
           "available": true,
-          "image": "tacos-al-pastor.jpg"
+          "image": "menu.jpg"
         },
         {
           "name": "Menú 5",
           "description": "3 gringas a elegir + totopos + refresco a elegir",
           "price": 14,
           "available": true,
-          "image": "tacos-al-pastor.jpg"
+          "image": "menu.jpg"
         },
         {
           "name": "Menú 6",
           "description": "3 gringas a elegir + totopos + cerveza mexicana a elegir",
           "price": 15,
           "available": true,
-          "image": "tacos-al-pastor.jpg"
+          "image": "menu.jpg"
         },
         {
           "name": "Menú 7",
           "description": "2 gorditas a elegir + refresco a elegir",
           "price": 12,
           "available": true,
-          "image": "tacos-al-pastor.jpg"
+          "image": "menu.jpg"
         },
         {
           "name": "Menú 8",
           "description": "2 gorditas a elegir + cerveza mexicana a elegir",
           "price": 13,
           "available": true,
-          "image": "tacos-al-pastor.jpg"
+          "image": "menu.jpg"
         },
         {
           "name": "Menú 9",
           "description": "4 gorditas a elegir + 4 refrescos a elegir",
           "price": 26,
           "available": true,
-          "image": "tacos-al-pastor.jpg"
+          "image": "menu.jpg"
         },
         {
           "name": "Menú 10",
           "description": "2 quesadillas a elegir + totopos + refresco a elegir",
           "price": 9,
           "available": true,
-          "image": "tacos-al-pastor.jpg"
+          "image": "menu.jpg"
         },
         {
           "name": "Menú 11",
           "description": "2 quesadillas a elegir + totopos + cerveza mexicana a elegir",
           "price": 10,
           "available": true,
-          "image": "tacos-al-pastor.jpg"
+          "image": "menu.jpg"
         },
         {
           "name": "Menú 12",
           "description": "1 alambre + totopos + 2 refrescos a elegir",
           "price": 17,
           "available": true,
-          "image": "tacos-al-pastor.jpg"
+          "image": "menu.jpg"
         },
         {
           "name": "Menú 13",
           "description": "1 alambre + totopos + 2 cervezas mexicanas a elegir",
           "price": 19,
           "available": true,
-          "image": "tacos-al-pastor.jpg"
+          "image": "menu.jpg"
         }
       ]
     },
@@ -579,21 +579,21 @@
           "description": "",
           "price": 3.5,
           "available": false,
-          "image": "cervezas-mexicanas.jpg"
+          "image": "cerveza-negra-modelo.jpg"
         },
         {
           "name": "Cerveza Mexicana Modelo Especial",
           "description": "",
           "price": 3.5,
           "available": true,
-          "image": "cervezas-mexicanas.jpg"
+          "image": "cerveza-modelo.jpg"
         },
         {
           "name": "Cerveza Pacífico Clara",
           "description": "",
           "price": 3.5,
           "available": false,
-          "image": "cervezas-mexicanas.jpg"
+          "image": "cerveza-pacifico-clara.jpg"
         },
         {
           "name": "Cerveza Corona Cero",
