@@ -4,7 +4,7 @@ import { Clock, ExternalLink, MapPin, Phone } from "lucide-react";
 import { ButtonLink } from "@/components/ui/Button";
 import { RevealOnScroll } from "@/components/ui/RevealOnScroll";
 import { SectionHeading } from "@/components/ui/SectionHeading";
-import { restaurantAddress, restaurantMapsUrl } from "@/data/location";
+import { restaurantAddress_sub, restaurantMapsUrl } from "@/data/location";
 
 const contactInfo: Array<{
   icon: React.ReactNode;
@@ -20,8 +20,8 @@ const contactInfo: Array<{
 }> = [
   {
     icon: <MapPin className="h-8 w-8" />,
-    title: "Dirección",
-    content: restaurantAddress,
+    title: "Reseñas",
+    content: restaurantAddress_sub,
     link: restaurantMapsUrl,
     isMapLink: true,
   },
