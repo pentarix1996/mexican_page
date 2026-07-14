@@ -503,7 +503,14 @@
           "description": "",
           "price": 2.5,
           "available": true,
-          "image": "bebidas-refrescos.jpg"
+          "image": "aquarius-limon.jpg"
+        },
+        {
+          "name": "Aquarius Naranja",
+          "description": "",
+          "price": 2.5,
+          "available": true,
+          "image": "aquarius-naranja.jpg"
         },
         {
           "name": "Tercio Mahou 5 Estrellas",
@@ -565,14 +572,14 @@
           "description": "",
           "price": 3.5,
           "available": true,
-          "image": "cervezas-mexicanas.jpg"
+          "image": "cerveza-sol.jpg"
         },
         {
           "name": "Cerveza Corona",
           "description": "",
           "price": 3.5,
           "available": true,
-          "image": "cervezas-mexicanas.jpg"
+          "image": "cerveza-corona.jpg"
         },
         {
           "name": "Cerveza Negra Modelo",
@@ -600,7 +607,7 @@
           "description": "",
           "price": 3.5,
           "available": true,
-          "image": "cervezas-mexicanas.jpg"
+          "image": "cerveza-corona-cero.jpg"
         }
       ]
     }
