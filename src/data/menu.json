@@ -94,6 +94,13 @@
           "image": "tarta-chocolate.jpg"
         },
         {
+          "name": "Tarta de 3 leches",
+          "description": "",
+          "price": 5,
+          "available": false,
+          "image": "tarta-3-leches.jpg"
+        },
+        {
           "name": "Pan de muerto",
           "description": "",
           "price": 5,
