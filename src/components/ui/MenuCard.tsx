@@ -36,13 +36,23 @@ export function MenuCard({ name, description, price, image, tags = [], badge }: 
     <article className="group relative overflow-hidden rounded-xl border border-[#f2d5a7] bg-white shadow-[0_10px_28px_rgba(91,42,0,0.12)] transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_18px_45px_rgba(91,42,0,0.18)]">
       <div className="relative aspect-[1.55] overflow-hidden bg-[#f6d7a8]">
         {image ? (
-          <Image
-            src={`/assets/menu/${image}`}
-            alt={name}
-            fill
-            className="object-cover transition-transform duration-500 group-hover:scale-105"
-            sizes="(min-width: 1024px) 25vw, (min-width: 640px) 50vw, 100vw"
-          />
+          <>
+            <Image
+              src={`/assets/menu/${image}`}
+              alt=""
+              aria-hidden="true"
+              fill
+              className="scale-110 object-cover opacity-25 blur-xl transition-transform duration-500 group-hover:scale-[1.15]"
+              sizes="(min-width: 1024px) 25vw, (min-width: 640px) 50vw, 100vw"
+            />
+            <Image
+              src={`/assets/menu/${image}`}
+              alt={name}
+              fill
+              className="object-contain"
+              sizes="(min-width: 1024px) 25vw, (min-width: 640px) 50vw, 100vw"
+            />
+          </>
         ) : (
           <div className="h-full w-full bg-[radial-gradient(circle_at_30%_20%,#fcbf49,transparent_30%),linear-gradient(135deg,#e63946,#f77f00)]" />
         )}
