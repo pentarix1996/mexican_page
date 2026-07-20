@@ -196,7 +196,7 @@
         },
         {
           "name": "EXTRA GUACAMOLE",
-          "description": "",
+          "description": "El aguacate preparado en su tradicional receta mexicana, natural y fresco",
           "price": 2.5,
           "available": true,
           "image": "extra-guacamole.jpg"
@@ -293,7 +293,7 @@
         },
         {
           "name": "EXTRA GUACAMOLE",
-          "description": "",
+          "description": "El aguacate preparado en su tradicional receta mexicana, natural y fresco",
           "price": 2.5,
           "available": true,
           "image": "extra-guacamole.jpg"
@@ -486,80 +486,80 @@
       "items": [
         {
           "name": "Tercio 0.0 Tostada",
-          "description": "",
+          "description": "Cerveza sin alcohol de perfil tostado, servida bien fría.",
           "price": 2.8,
           "available": true,
-          "image": "cervezas-mexicanas.jpg"
+          "image": "tercio-00-tostada.jpg"
         },
         {
-          "name": "Tercio Radler",
-          "description": "",
+          "name": "Lipton de Limón",
+          "description": "Té frío con un refrescante toque de limón.",
           "price": 2.8,
           "available": true,
-          "image": "cervezas-mexicanas.jpg"
+          "image": "lipton-limon.jpg"
         },
         {
           "name": "Aquarius Limón",
-          "description": "",
+          "description": "Bebida refrescante con sabor a limón.",
           "price": 2.5,
           "available": true,
           "image": "aquarius-limon.jpg"
         },
         {
           "name": "Aquarius Naranja",
-          "description": "",
+          "description": "Bebida refrescante con sabor a naranja.",
           "price": 2.5,
           "available": true,
           "image": "aquarius-naranja.jpg"
         },
         {
           "name": "Tercio Mahou 5 Estrellas",
-          "description": "",
+          "description": "Cerveza mexicana equilibrada y refrescante, servida bien fría.",
           "price": 2.8,
           "available": true,
-          "image": "cervezas-mexicanas.jpg"
-        },
-        {
-          "name": "Fanta Limón",
-          "description": "",
-          "price": 2.5,
-          "available": true,
-          "image": "bebidas-refrescos.jpg"
+          "image": "mahou.jpg"
         },
         {
           "name": "Nestea",
-          "description": "",
+          "description": "Té frío suave y refrescante con un toque cítrico.",
           "price": 2.5,
           "available": true,
-          "image": "bebidas-refrescos.jpg"
+          "image": "nestea.jpg"
         },
         {
           "name": "Agua Solán de Cabras 50cl",
-          "description": "",
+          "description": "Agua mineral natural en botella de 50 cl.",
           "price": 2,
           "available": true,
-          "image": "bebidas-refrescos.jpg"
+          "image": "agua-solan.jpg"
         },
         {
           "name": "Coca Cola",
-          "description": "",
+          "description": "El refresco clásico de cola, servido bien frío.",
           "price": 2.5,
           "available": true,
-          "image": "bebidas-refrescos.jpg"
+          "image": "cocacola.jpg"
         },
         {
           "name": "Coca Cola Zero",
-          "description": "",
+          "description": "Refresco de cola sin azúcar, servido bien frío.",
           "price": 2.5,
           "available": true,
-          "image": "bebidas-refrescos.jpg"
+          "image": "cocacola-zero.jpg"
         },
         {
           "name": "Fanta Naranja",
-          "description": "",
+          "description": "Refresco con sabor a naranja y un toque burbujeante.",
           "price": 2.5,
           "available": true,
-          "image": "bebidas-refrescos.jpg"
+          "image": "fanta-naranja.jpg"
+        },
+        {
+          "name": "Fanta Limón",
+          "description": "Refresco con sabor a limón, cítrico y burbujeante.",
+          "price": 2.5,
+          "available": true,
+          "image": "fanta-limon.jpg"
         }
       ]
     },
@@ -569,42 +569,42 @@
       "items": [
         {
           "name": "Cerveza Sol",
-          "description": "",
+          "description": "Cerveza mexicana ligera y refrescante, servida bien fría.",
           "price": 3.5,
           "available": true,
           "image": "cerveza-sol.jpg"
         },
         {
           "name": "Cerveza Corona",
-          "description": "",
+          "description": "Cerveza mexicana suave, ligera y muy refrescante.",
           "price": 3.5,
           "available": true,
           "image": "cerveza-corona.jpg"
         },
         {
           "name": "Cerveza Negra Modelo",
-          "description": "",
+          "description": "Cerveza oscura mexicana de cuerpo suave y notas tostadas.",
           "price": 3.5,
           "available": false,
           "image": "cerveza-negra-modelo.jpg"
         },
         {
           "name": "Cerveza Mexicana Modelo Especial",
-          "description": "",
+          "description": "Cerveza mexicana dorada, equilibrada y de sabor limpio.",
           "price": 3.5,
           "available": true,
           "image": "cerveza-modelo.jpg"
         },
         {
           "name": "Cerveza Pacífico Clara",
-          "description": "",
+          "description": "Cerveza mexicana clara, ligera y de final refrescante.",
           "price": 3.5,
           "available": false,
           "image": "cerveza-pacifico-clara.jpg"
         },
         {
           "name": "Cerveza Corona Cero",
-          "description": "",
+          "description": "Cerveza mexicana sin alcohol, ligera y refrescante.",
           "price": 3.5,
           "available": true,
           "image": "cerveza-corona-cero.jpg"
